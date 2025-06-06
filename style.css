@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --mainColor: #BA2D0B;
+    --secondColor: #D5F2E3;
+    --thirdColor: #73BA9B;
+    --forthColor: #003E1F;
+    --fifthColor: #01110A;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: 
+    "header header"
+    "navbar navbar"
+    "main main"
+    "footer footer";
+}
+
+header{
+    grid-area: header;
+    background-color: var(--mainColor);
+    padding: 1em;
+    text-align: center;
+}
+
+nav{
+    grid-area: navbar;
+    background-color: var(--thirdColor);
+    color: white;
+    position: sticky;
+    top: 0;
+    padding: 1em;
+}
+
+.search_bar{
+    text-align: right;
+}
+
+.saved_search img{
+    position: absolute;
+}
+
+.saved_search p{
+    position: absolute;
+    padding-left: 40px;
+}
+
+main{
+    grid-area: main;
+    background-color: var(--secondColor);
+    text-align: justify;
+    padding: 1em;
+}
+
+main>div.service_list{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.service{
+    background-color: var(--thirdColor);
+    padding: 1em;
+}
+
+.service .text{
+    position: relative;
+}
+
+footer{
+    grid-area: footer;
+    background-color: var(--forthColor);
+    position: sticky;
+    bottom: 0;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
