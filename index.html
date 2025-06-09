@@ -4,65 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Server</title>
-    <link rel="stylesheet" href="css/style.css">
+    <!--link rel="stylesheet" href="css/style.css"-->
 </head>
 <body>
-    <!--Header, for title phrase and logo-->
-    <header>
-        <img src="images/logo_ubuntu.png" alt="logo_ubuntu" height="100px" width="100px">
-        <div class="text">
-            <h1>Happy Server</h1>
-            <p>This is my mother-fucking dashboard!</p>
-        </div>
-    </header>
-
-    <!--Navigation bar-->
-    <nav>
-        <div class="saved_search">
+    <h1>Happy Server</h1>
+    <p>Server dashboard for management and status</p>
+    <hr>
+    <h2>Services list and information</h2>
+    <ul>
+        <li>
             <a href="">
-                <img src="images/logo_docker.png" alt="logo_docker" height="30px" width="30px">
-                <p>Docker Docs</p>
+                <h3>Jellyfin</h3>
+                <p>Watch series and movies localy.</p>
             </a>
-        </div>
-        <div class="search_bar">
-            <input type="text" placeholder="R4D words">
-            <button type="submit">Search</button>
-        </div>
-    </nav>
-
-    <!--List of Services-->
-    <main>
-        <h2>Services</h2>
-        <div class="service_list">
-            <div class="service">
-                <a href="">
-                    <div>
-                        <img src="images/logo_jellyfin.png" alt="logo_jellyfin" height="50px" width="50px">
-                        <div class="text">
-                            <h3>Jellyfin</h3>
-                            <p>Watch mother-fucking series and films.</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="service">
-                <a href="">
-                    <div>
-                        <img src="images/logo_portainer.png" alt="logo_portainer" height="50px" width="50px">
-                        <div class="text">
-                            <h3>Portainer</h3>
-                            <p>Manage docker and docker fucking containers.</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </main>
-
-    <!--Footer-->
-    <footer>
-        <p>Server Dashboard [ALPHA]</p>
-    </footer>
-
+        </li>
+        <li>
+            <a href="">
+                <h3>Portainer</h3>
+                <p>Manage docker.</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <h3>Minecraft</h3>
+                <p>IP: 192.168.1.101:25565</p>
+            </a>
+        </li>
+    </ul>
 </body>
 </html>
